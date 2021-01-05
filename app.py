@@ -9,7 +9,7 @@ def main():
     con = sqlite3.connect('database.db')
     con.row_factory = sqlite3.Row
     cur = con.cursor()
-    cur.execute("SELECT * FROM berita LIMIT 3")
+    cur.execute("SELECT * FROM berita ORDER BY id DESC LIMIT 3")
     rows = cur.fetchall()
     return render_template('index.html', rows=rows)
 
