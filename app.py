@@ -8,7 +8,7 @@ application = Flask(__name__)
 def main():
     # konek db
     con = sqlite3.connect('database.db')
-    # untuk konversi tuple kosong ke objek yang lebih berguna.
+    # menggunakan objek row untuk mengembalikan hasil query
     con.row_factory = sqlite3.Row
     # untuk mengeksekusi perintah SQL atau query.
     cur = con.cursor()
