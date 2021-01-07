@@ -1,0 +1,565 @@
+html {
+  scroll-behavior: smooth;
+   /* overflow:   scroll; */
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+section{
+  overflow-x: hidden;
+}
+/* font */
+@font-face {
+  font-family: "Maison-Neue-Bold";
+  src: url("../font/MaisonNeueBold/MaisonNeueBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  HALAMAN INDEX  */
+a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #5d5d5d;
+}
+
+/* help */
+#help {
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+
+  60% {
+    transform: translateY(10px);
+  }
+}
+
+.container {
+  /* 
+    border: 1px solid red; */
+  padding: 0px 10px;
+  max-width: 1140px;
+}
+
+/* index */
+.deskripsi {
+  /* font-family: "Comic Sans MS", cursive, sans-serif; */
+  color: #4d4c4c;
+
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.title-utama {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 40px; */
+  font-weight: bolder;
+}
+
+/* section satu */
+.section-satu {
+  padding-top: 15%;
+  padding-bottom: 8%;
+  /* background-color: #8f8fec; */
+  background-color: #2d394d;
+  margin-top: 0;
+  
+}
+.br-hidden{
+  display: none;
+}
+
+.deskripsi-satu {
+  margin-top: 30%;
+}
+
+/* section 2 */
+.section-dua {
+  overflow-y: hidden ;
+  background: #f0f0f0b3;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 3%,
+    rgba(240, 240, 240, 0.7) 30%
+  );
+  padding-bottom: 5%;
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.section-empat{
+  overflow-y: hidden;
+}
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #473d3a;
+  margin: 0 10px;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+.team .member .social a:hover {
+  color: #ff5821;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #473d3a;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #989595;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #656262;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+}
+.anggota {
+  border-radius: 10px;
+  transition: 0.6s;
+  transform: translateY(0px);
+}
+.anggota:hover {
+  transition: 1.2s;
+  transform: translateY(-30px);
+  -webkit-box-shadow: 0px 22px 18px 2px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 22px 18px 2px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 22px 18px 2px rgba(0, 0, 0, 0.34);
+}
+/*card show animation*/
+.anggota {
+ 
+  transform: translate(0, 150px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.element-show {
+
+  transform: translate(0, 0);
+  opacity: 1;
+  display: inline-table;
+}
+/* sectrion 2 end */
+
+/* section 3 */
+.section-tiga {
+  margin-top: 0;
+  background-color: #2d394d;
+}
+
+/* section 3 end */
+
+/* section 4 (dua)*/
+.kotak-fitur{
+  margin: 10px;
+
+  
+}
+
+.kf-satu .far{
+color: #8BC6EC;;
+}
+.kf-dua .fas{
+color: #f7ab95;
+}
+.kf-tiga .far{
+color: #f2a4ea;;
+}
+.kf-empat .fas{
+color: #6aded6;;
+}
+
+
+.kf-satu:hover{
+color: #fff;
+background-color: #8BC6EC;
+background-image: linear-gradient(112deg, #8BC6EC 0%, #9599E2 100%);
+}
+.kf-dua:hover{
+  color: #fff;
+  background-color: #f7ab95;
+  background-image: linear-gradient(112deg, #f7ab95 0%, #cf5144 100%);
+}
+.kf-tiga:hover{
+
+  color: #fff;
+  background-color: #f2a4ea;
+  background-image: linear-gradient(112deg, #f2a4ea 0%, #c927c9 100%);
+}
+.kf-empat:hover{
+  color: #fff;
+  background-color: #6aded6;
+  background-image: linear-gradient(90deg, #6aded6 0%, #30b0cb 100%);
+
+}
+.kf-satu:hover .far{ color: white;}
+.kf-dua:hover .fas{color: white;}
+.kf-tiga:hover .far{color: white;}
+.kf-empat:hover .fas{ color: white;}
+
+.card-body{
+ 
+  margin: 3%;
+  border-radius: 10px;
+}
+.card-deskripsi{
+      font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+}
+/* section 4 end*/
+
+/* section 5 */
+.section-lima{
+  background-color:#2d394d ;}
+
+  .slider-2 {
+	padding-top: 7.5rem;
+	padding-bottom: 7rem;
+  background-size: cover; 
+ 
+}
+
+.slider-2 .image-container {
+	margin-bottom: 4rem;
+}
+
+
+
+.slider-2 .slider-container {
+	position: relative;
+}
+
+.slider-2 .swiper-container {
+	position: static;
+	width: 90%;
+	text-align: center;
+}
+
+.slider-2 .swiper-button-prev:focus,
+.slider-2 .swiper-button-next:focus {
+	/* even if you can't see it chrome you can see it on mobile device */
+	outline: none;
+}
+
+.slider-2 .swiper-button-prev {
+	left: -0.5rem;
+	
+	background-size: 1.125rem 1.75rem;
+}
+
+.slider-2 .swiper-button-next {
+	right: -0.5rem;
+
+	background-size: 1.125rem 1.75rem;
+}
+
+.slider-2 .card {
+	position: relative;
+	border: none;
+	background-color: transparent;
+}
+
+.slider-2 .card-image {
+	height: 7rem;
+	margin-right: auto;
+	margin-bottom: 0.25rem;
+	margin-left: auto;
+
+}
+
+.slider-2 .card-body {
+	padding-bottom: 0;
+}
+
+.slider-2 .testimonial-author {
+  margin-bottom: 0;
+  color: white;
+}
+
+
+.swiper-slide .card{
+  background-color: transparent;
+}
+.testimonial-text{
+  color: white;
+}
+/* section 5 end */
+
+/* section 6 */
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.section-enam{
+  overflow-y: hidden;
+}
+.portfolio-item img{
+ border-radius: 10px;
+}
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #313030;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: white;
+  background: #34435a;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  color: #473d3a;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+  color: #7f6d68;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 40px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: #635551;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color:#2d394d;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 10px;
+}
+
+.portfolio .portfolio-item .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-item .portfolio-links a {
+  color: #fff;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-item .portfolio-links a:hover {
+  color: #2d394d;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 0;
+}
+
+.portfolio-details .portfolio-details-container {
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
+  background-color: #ff5821 !important;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 50px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-details .portfolio-description h2 {
+    width: 100%;
+  }
+  .portfolio-details .portfolio-info {
+    position: static;
+    margin-top: 30px;
+  }
+  .br-hidden{
+  display: unset;
+}
+}
+/* section 6 end */

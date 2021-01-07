@@ -18,6 +18,17 @@ def main():
     # render template dan tampilkan value rows di index.html
     return render_template('index.html', rows=rows)
 
+@application.route('/test')
+def hello():
+    con = sqlite3.connect('database.db')
+    # menggunakan objek row untuk mengembalikan hasil query
+    con.row_factory = sqlite3.Row
+    # untuk mengeksekusi perintah SQL atau query.
+    cur = con.cursor()
+    cur.execute("SELECT * FROM berita ORDER BY id DESC")
+    # mengambil semua record
+    rows = cur.fetchall()
+    return render_template('index2.html', rows=rows)
 
 if __name__ == '__main__':
     # untuk menjalankan aplikasi, debug=true unntuk debugging
