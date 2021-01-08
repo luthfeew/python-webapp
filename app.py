@@ -12,7 +12,7 @@ def main():
     con.row_factory = sqlite3.Row
     # untuk mengeksekusi perintah SQL atau query.
     cur = con.cursor()
-    cur.execute("SELECT * FROM berita ORDER BY id DESC LIMIT 3")
+    cur.execute("SELECT * FROM berita ORDER BY id DESC")
     # mengambil semua record
     rows = cur.fetchall()
     # render template dan tampilkan value rows di index.html
