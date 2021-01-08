@@ -108,17 +108,17 @@ $(document).ready(function () {
 
   // should start at 0
 
-  // $(window).scroll(function () {
-  //   var scroll = $(window).scrollTop();
-  //   if (scroll > position) {
-  //     $("nav").removeClass("nav-show");
-  //     $("nav").addClass("nav-hide");
-  //   } else {
-  //     $("nav").removeClass("nav-hide");
-  //     $("nav").addClass("nav-show");
-  //   }
-  //   position = scroll;
-  // });
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > position) {
+      $("nav").removeClass("nav-show");
+      $("nav").addClass("nav-hide");
+    } else {
+      $("nav").removeClass("nav-hide");
+      $("nav").addClass("nav-show");
+    }
+    position = scroll;
+  });
 
   // pop up under construct
   // $(document).ready(function () {
